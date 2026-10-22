@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Events practice</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="events.js" defer></script>
+</head>
+<body>
+  <header>
+    <nav aria-label="Assignment parts">
+      <a href="index.html">Basics</a>
+      <a href="dom.html">DOM</a>
+      <a href="events.html" aria-current="page">Events</a>
+      <a href="todo.html">To-do list</a>
+    </nav>
+  </header>
+  <main>
+    <p class="part">Part 3</p>
+    <h1>Events practice</h1>
+    <section>
+      <h2>Task 5 / Mouse events</h2>
+      <div id="mouse-box" class="box">Move your mouse over this box</div>
+    </section>
+    <section>
+      <h2>Task 6 / Keyboard events</h2>
+      <label for="typing">Type something</label>
+      <input id="typing" type="text">
+      <p>Your text: <span id="typed-text"></span></p>
+    </section>
+    <section>
+      <h2>Task 7 / Calculator</h2>
+      <form id="calculator">
+        <label for="first-number">First number</label>
+        <input id="first-number" type="number" step="any" required>
+        <label for="operation">Operation</label>
+        <select id="operation">
+          <option value="+">Add +</option>
+          <option value="-">Subtract -</option>
+          <option value="*">Multiply *</option>
+          <option value="/">Divide /</option>
+        </select>
+        <label for="second-number">Second number</label>
+        <input id="second-number" type="number" step="any" required>
+        <button type="submit">Calculate</button>
+      </form>
+      <p id="answer" role="status">Result appears here</p>
+    </section>
+  </main>
+  <footer>Arnur Kozhabergen / SE-2529 / Assignment 5</footer>
+</body>
+</html>
