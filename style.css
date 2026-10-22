@@ -1,29 +1,93 @@
+* {
+  box-sizing: border-box;
+}
+
 body {
-  max-width: 800px;
+  max-width: 840px;
   margin: auto;
-  padding: 20px;
-  font-family: Arial, sans-serif;
+  padding: 24px;
+  background: #f3f5f3;
+  color: #29352f;
+  font: 16px/1.5 Arial, sans-serif;
 }
 
 nav {
   display: flex;
   flex-wrap: wrap;
-  gap: 16px;
+  gap: 8px;
 }
 
-main, footer {
-  margin-top: 32px;
+nav a {
+  padding: 9px 14px;
+  border-radius: 6px;
+  color: #315c47;
+  text-decoration: none;
+}
+
+nav a:hover {
+  background: #e1e9e2;
+}
+
+nav a[aria-current] {
+  background: #315c47;
+  color: white;
+}
+
+main {
+  margin-top: 24px;
+  padding: 28px;
+  border: 1px solid #dce3dc;
+  border-radius: 8px;
+  background: white;
+}
+
+h1 {
+  margin: 8px 0 24px;
+  font-size: 28px;
+}
+
+h2 {
+  font-size: 19px;
+}
+
+.part, footer {
+  color: #627067;
+  font-size: 14px;
+}
+
+footer {
+  margin-top: 24px;
 }
 
 section {
-  margin-bottom: 32px;
+  margin-top: 24px;
+  padding-top: 12px;
+  border-top: 1px solid #e5e9e5;
 }
 
 button, input, select {
   max-width: 100%;
-  padding: 6px;
+  padding: 9px 12px;
   margin: 4px 4px 4px 0;
+  border: 1px solid #b9c6bc;
+  border-radius: 5px;
   font: inherit;
+}
+
+button {
+  background: #315c47;
+  color: white;
+  cursor: pointer;
+  transition: background-color 150ms ease-out;
+}
+
+button:hover {
+  background: #244535;
+}
+
+input:focus, select:focus, button:focus-visible, nav a:focus-visible {
+  outline: 2px solid #315c47;
+  outline-offset: 2px;
 }
 
 label {
@@ -33,6 +97,7 @@ label {
 
 .box {
   padding: 20px;
+  border-radius: 5px;
   background-color: #eee;
 }
 
@@ -42,9 +107,35 @@ li {
 }
 
 .done {
+  color: #627067;
   text-decoration: line-through;
 }
 
+#tasks {
+  padding: 0;
+}
+
+#tasks li {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  border: 1px solid #e1e7e1;
+  border-radius: 5px;
+  background: #f8faf8;
+}
+
 .task-name {
+  flex: 1;
+  min-width: 0;
   margin: 0 8px;
+}
+
+@media (max-width: 480px) {
+  body, main {
+    padding: 16px;
+  }
+
+  nav a {
+    padding: 8px 10px;
+  }
 }
