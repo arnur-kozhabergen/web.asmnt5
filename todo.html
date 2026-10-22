@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>To-do list</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="todo.js" defer></script>
+</head>
+<body>
+  <header>
+    <nav aria-label="Assignment parts">
+      <a href="index.html">Basics</a>
+      <a href="dom.html">DOM</a>
+      <a href="events.html">Events</a>
+      <a href="todo.html" aria-current="page">To-do list</a>
+    </nav>
+  </header>
+  <main>
+    <p class="part">Part 4</p>
+    <h1>Task 8 / To-do list</h1>
+    <form id="task-form">
+      <label for="task-input">New task</label>
+      <input id="task-input" type="text" placeholder="Buy bananas" required>
+      <button type="submit">Add Task</button>
+    </form>
+    <p>Tick a task to mark it as completed</p>
+    <ul id="tasks"></ul>
+    <p>Tasks are kept only until this page is closed or reloaded</p>
+  </main>
+  <footer>Arnur Kozhabergen / SE-2529 / Assignment 5</footer>
+</body>
+</html>
